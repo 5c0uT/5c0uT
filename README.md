@@ -47,10 +47,10 @@
 <div align="center">
   <img src="https://skillicons.dev/icons?i=dotnet,nodejs,django,react&theme=dark" alt="runtime and frameworks" />
 </div>
-<p align="center">
+<div align="center">
   <img src="https://img.shields.io/badge/Playwright-1f242d?style=flat-square&logo=playwright&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Playwright" />
-  <img src="./assets/interton.svg" alt="Interton" height="20" />
-</p>
+  <img src="./assets/interton.svg" alt="Interton" height="16" />
+</div>
 
 <p align="center"><code>systems / compute</code></p>
 <p align="center">
@@ -60,13 +60,13 @@
   <img src="https://img.shields.io/badge/CMake-1f242d?style=flat-square&logo=cmake&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="CMake" />
   <img src="https://img.shields.io/badge/CUDA-1f242d?style=flat-square&labelColor=0d1117&color=1f242d" alt="CUDA" />
 </p>
-<p align="center">
+<div align="center">
   <img src="https://img.shields.io/badge/EndeavourOS-1f242d?style=flat-square&logo=endeavouros&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="EndeavourOS" />
   <img src="https://img.shields.io/badge/Vulkan-1f242d?style=flat-square&logo=vulkan&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Vulkan" />
   <img src="https://img.shields.io/badge/OpenGL-1f242d?style=flat-square&logo=opengl&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="OpenGL" />
-  <img src="./assets/physx-badge.svg" alt="PhysX" height="20" />
-  <img src="./assets/security-badge.svg" alt="Security" height="20" />
-</p>
+  <img src="./assets/physx-badge.svg" alt="PhysX" height="18" />
+  <img src="./assets/security-badge.svg" alt="Security" height="18" />
+</div>
 
 <p align="center"><code>data / storage</code></p>
 <div align="center">
@@ -111,7 +111,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/logic-map.svg" alt="Logic map of repository progression and linkage" width="100%" />
+  <img src="./assets/logic-map.svg" alt="Logic map of repository progression and linkage" width="96%" />
 </p>
 
 <p align="center">
