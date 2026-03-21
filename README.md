@@ -1,11 +1,11 @@
 <h1 align="center">5c0uT / Integrate</h1>
 
 <p align="center">
-  <code>building language tooling, infrastructure-heavy systems, and applied AI</code>
+  <code>building typed tools, infrastructure-heavy systems, and applied AI workflows</code>
 </p>
 
 <p align="center">
-  Engineering across typed tooling, data-intensive runtimes, and production work that does not always live in public repositories.
+  Public repositories show the structure; a meaningful share of the production work stays private.
 </p>
 
 <p align="center">
@@ -28,11 +28,11 @@
 
 ## `> current_focus`
 
-```text
-building language tooling and structured developer workflows
-refining infrastructure-heavy systems for data and compute workloads
-shipping applied AI automation across public and private engineering work
-```
+<p align="center">
+  <code>building language tooling and structured developer workflows</code><br/>
+  <code>refining infrastructure-heavy systems for data and compute workloads</code><br/>
+  <code>shipping applied AI automation across public and private engineering work</code>
+</p>
 
 ---
 
@@ -85,12 +85,16 @@ shipping applied AI automation across public and private engineering work
 
 ## `> featured_projects`
 
+<p align="center">
+  <sub>public projects that map the current engineering direction most clearly</sub>
+</p>
+
 | `Interton` |
 | --- |
 | Engineering language project built around a typed core, standard modules, and domain-specific stacks. |
 | Designed as a structured entry point for technical development where modularity, language design, and practical integration stay first-class. |
 | <img src="https://img.shields.io/badge/typed_core-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="typed core" /> <img src="https://img.shields.io/badge/modules-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="modules" /> <img src="https://img.shields.io/badge/domain_stacks-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="domain stacks" /> |
-| [![repo](https://img.shields.io/badge/open_repo-39d353?style=for-the-badge&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/Interton) |
+| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/Interton) |
 
 <br />
 
@@ -99,7 +103,7 @@ shipping applied AI automation across public and private engineering work
 | High-performance 3D spatial data system designed for geospatial workloads with GPU-accelerated processing. |
 | Built closer to infrastructure and computation than UI, with emphasis on throughput, spatial data handling, and engineering for scale. |
 | <img src="https://img.shields.io/badge/3d_data-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="3d data" /> <img src="https://img.shields.io/badge/gpu_compute-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="gpu compute" /> <img src="https://img.shields.io/badge/geospatial-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="geospatial" /> |
-| [![repo](https://img.shields.io/badge/open_repo-39d353?style=for-the-badge&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/SpartialDB_core) |
+| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/SpartialDB_core) |
 
 ---
 
@@ -111,6 +115,10 @@ shipping applied AI automation across public and private engineering work
 
 <p align="center">
   <img src="./assets/logic-map.svg" alt="Logic map of repository progression and linkage" width="100%" />
+</p>
+
+<p align="center">
+  <sub>public repository graph only; private production work is intentionally omitted from the map</sub>
 </p>
 
 ---
