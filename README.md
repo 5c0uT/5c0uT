@@ -123,24 +123,27 @@
 ## `> stats`
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/overview.svg#gh-dark-mode-only" alt="github overview dark" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/overview.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/overview.svg" />
+    <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/overview.svg" alt="github overview" />
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/overview.svg#gh-light-mode-only" alt="github overview light" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" />
+    <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" alt="github languages" />
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg#gh-dark-mode-only" alt="github languages dark" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg#gh-light-mode-only" alt="github languages light" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=5c0uT&theme=dark&hide_border=true&background=0d1117&border=0d1117&stroke=2a2f38&ring=39d353&fire=39d353&currStreakNum=39d353&sideNums=9be9a8&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=8b949e#gh-dark-mode-only" alt="github streak dark" />
-  <img src="https://streak-stats.demolab.com?user=5c0uT&theme=default&hide_border=true&background=f6fff8&border=f6fff8&stroke=d8dee4&ring=2f855a&fire=2f855a&currStreakNum=2f855a&sideNums=22543d&currStreakLabel=1a202c&sideLabels=4a5568&dates=4a5568#gh-light-mode-only" alt="github streak light" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=5c0uT&theme=dark&hide_border=true&background=0d1117&border=0d1117&stroke=2a2f38&ring=39d353&fire=39d353&currStreakNum=39d353&sideNums=9be9a8&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=8b949e" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=5c0uT&theme=default&hide_border=true&background=f6fff8&border=f6fff8&stroke=d8dee4&ring=2f855a&fire=2f855a&currStreakNum=2f855a&sideNums=22543d&currStreakLabel=1a202c&sideLabels=4a5568&dates=4a5568" />
+    <img src="https://streak-stats.demolab.com?user=5c0uT&theme=dark&hide_border=true&background=0d1117&border=0d1117&stroke=2a2f38&ring=39d353&fire=39d353&currStreakNum=39d353&sideNums=9be9a8&currStreakLabel=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="github streak" />
+  </picture>
 </p>
 
 <p align="center">
