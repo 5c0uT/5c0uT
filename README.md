@@ -42,7 +42,7 @@
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py,cpp,c,cs,js,ts,bash,powershell&theme=dark" alt="languages" />
   <a href="https://github.com/5c0uT/Interton" target="_blank">
-    <img src="./assets/interton.svg" alt="Interton language" height="18" style="vertical-align: middle; margin-left: 8px;" />
+    <img src="./assets/interton.svg" alt="Interton language" height="24" style="vertical-align: middle; margin-left: 6px;" />
   </a>
 </div>
 
