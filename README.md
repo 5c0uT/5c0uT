@@ -82,21 +82,21 @@
   <sub>public projects that map the current engineering direction most clearly</sub>
 </p>
 
-| `Interton` |
-| --- |
-| Programming language project built around a typed core, standard modules, and domain-specific stacks. |
-| Designed as a structured entry point for technical development where modularity, language design, and practical integration stay first-class. |
+| `Interton`                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Programming language project built around a typed core, standard modules, and domain-specific stacks.                                                                                                                                                                                                                                                                                     |
+| Designed as a structured entry point for technical development where modularity, language design, and practical integration stay first-class.                                                                                                                                                                                                                                             |
 | <img src="https://img.shields.io/badge/typed_core-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="typed core" /> <img src="https://img.shields.io/badge/modules-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="modules" /> <img src="https://img.shields.io/badge/domain_stacks-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="domain stacks" /> |
-| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/Interton) |
+| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/Interton)                                                                                                                                                                                                                              |
 
 <br />
 
-| `SpartialDB_core` |
-| --- |
-| High-performance 3D spatial data system designed for geospatial workloads with GPU-accelerated processing. |
-| Built closer to infrastructure and computation than UI, with emphasis on throughput, spatial data handling, and engineering for scale. |
+| `SpartialDB_core`                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| High-performance 3D spatial data system designed for geospatial workloads with GPU-accelerated processing.                                                                                                                                                                                                                                                                            |
+| Built closer to infrastructure and computation than UI, with emphasis on throughput, spatial data handling, and engineering for scale.                                                                                                                                                                                                                                                |
 | <img src="https://img.shields.io/badge/3d_data-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="3d data" /> <img src="https://img.shields.io/badge/gpu_compute-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="gpu compute" /> <img src="https://img.shields.io/badge/geospatial-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="geospatial" /> |
-| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/SpartialDB_core) |
+| [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/SpartialDB_core)                                                                                                                                                                                                                   |
 
 ---
 
@@ -111,7 +111,7 @@
 </p>
 
 <p align="center">
-  <sub>public repository graph only; private production work is intentionally omitted from the map</sub>
+  <sub>one compressed map of repository signals, system paths, and integration direction</sub>
 </p>
 
 ---
