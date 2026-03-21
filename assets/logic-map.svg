@@ -1,135 +1,164 @@
-<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="980" height="760" viewBox="0 0 980 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" />
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7"/>
     </filter>
     <style>
-      .panel { fill: #0d1117; stroke: #30363d; stroke-width: 2; }
-      .title { fill: #c9d1d9; font: 700 18px 'Segoe UI', Arial, sans-serif; }
-      .line { stroke: #7ee787; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-      .subline { stroke: #8b949e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .mint { fill: #74f0c0; stroke: #0d1117; stroke-width: 2; }
-      .violet { fill: #c7a8ff; stroke: #0d1117; stroke-width: 2; }
-      .faint-mint { fill: #74f0c0; opacity: 0.38; }
-      .faint-violet { fill: #c7a8ff; opacity: 0.34; }
-      .spark { stroke: #c9d1d9; stroke-width: 2; stroke-linecap: round; }
-      .caption { fill: #8b949e; font: 500 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 0.08em; }
+      .panel { fill:#fffdf8; stroke:#111111; stroke-width:3; }
+      .title { fill:#111111; font:700 20px 'Segoe UI', Arial, sans-serif; }
+      .caption { fill:#4b5563; font:500 12px 'Segoe UI', Arial, sans-serif; letter-spacing:0.08em; }
+      .mint { fill:#66e0be; stroke:#151515; stroke-width:2.3; }
+      .violet { fill:#c8a8ff; stroke:#151515; stroke-width:2.3; }
+      .faint-mint { fill:#66e0be; opacity:0.28; }
+      .faint-violet { fill:#c8a8ff; opacity:0.26; }
+      .mesh { stroke:#202020; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+      .pathline { stroke:#202020; stroke-width:3.5; stroke-linecap:round; stroke-linejoin:round; }
+      .spark { stroke:#202020; stroke-width:2.2; stroke-linecap:round; }
+      .note { fill:#111111; font:600 11px 'Segoe UI', Arial, sans-serif; }
+      .subnote { fill:#6b7280; font:500 10px 'Segoe UI', Arial, sans-serif; }
+      .chip { fill:#f7f7f7; stroke:#cfd3d8; stroke-width:1.2; }
     </style>
   </defs>
 
-  <rect width="900" height="700" fill="transparent" />
+  <rect width="980" height="760" fill="transparent"/>
+  <text x="490" y="30" text-anchor="middle" class="caption">REPOSITORY SIGNAL -> STRUCTURE -> EXPERIENCE -> STRATEGY -> INTUITION</text>
 
-  <text x="450" y="34" text-anchor="middle" class="caption">RAW SIGNAL -> STRUCTURE -> EXPERIENCE -> STRATEGY -> INTUITION</text>
+  <rect x="24" y="52" width="286" height="286" rx="16" class="panel"/>
+  <rect x="346" y="52" width="286" height="286" rx="16" class="panel"/>
+  <rect x="668" y="52" width="286" height="286" rx="16" class="panel"/>
+  <rect x="184" y="382" width="286" height="286" rx="16" class="panel"/>
+  <rect x="510" y="382" width="286" height="286" rx="16" class="panel"/>
 
-  <rect x="24" y="56" width="260" height="270" rx="18" class="panel" />
-  <rect x="320" y="56" width="260" height="270" rx="18" class="panel" />
-  <rect x="616" y="56" width="260" height="270" rx="18" class="panel" />
-  <rect x="170" y="362" width="260" height="270" rx="18" class="panel" />
-  <rect x="470" y="362" width="260" height="270" rx="18" class="panel" />
-
-  <text x="154" y="92" text-anchor="middle" class="title">Information</text>
-  <text x="450" y="92" text-anchor="middle" class="title">Knowledge</text>
-  <text x="746" y="92" text-anchor="middle" class="title">Experience</text>
-  <text x="300" y="398" text-anchor="middle" class="title">Strategy</text>
-  <text x="600" y="398" text-anchor="middle" class="title">Intuition</text>
+  <text x="167" y="90" text-anchor="middle" class="title">Information</text>
+  <text x="489" y="90" text-anchor="middle" class="title">Knowledge</text>
+  <text x="811" y="90" text-anchor="middle" class="title">Experience</text>
+  <text x="327" y="420" text-anchor="middle" class="title">Strategy</text>
+  <text x="653" y="420" text-anchor="middle" class="title">Intuition</text>
 
   <!-- Information -->
-  <circle cx="64" cy="170" r="10" class="mint" />
-  <circle cx="92" cy="233" r="9" class="violet" />
-  <circle cx="116" cy="132" r="10" class="violet" />
-  <circle cx="145" cy="266" r="8" class="mint" />
-  <circle cx="172" cy="112" r="8" class="violet" />
-  <circle cx="202" cy="172" r="10" class="mint" />
-  <circle cx="228" cy="246" r="8" class="mint" />
-  <circle cx="247" cy="145" r="9" class="mint" />
-  <circle cx="122" cy="307" r="7" class="violet" />
-  <circle cx="187" cy="301" r="11" class="mint" />
-  <circle cx="235" cy="205" r="9" class="violet" />
-  <circle cx="82" cy="294" r="7" class="mint" />
-  <circle cx="173" cy="221" r="9" class="violet" />
+  <circle cx="58" cy="162" r="10" class="mint"/>
+  <circle cx="91" cy="222" r="9" class="violet"/>
+  <circle cx="114" cy="129" r="10" class="violet"/>
+  <circle cx="144" cy="274" r="8" class="mint"/>
+  <circle cx="171" cy="112" r="8" class="violet"/>
+  <circle cx="205" cy="170" r="10" class="mint"/>
+  <circle cx="226" cy="244" r="8" class="mint"/>
+  <circle cx="250" cy="142" r="9" class="mint"/>
+  <circle cx="122" cy="302" r="7" class="violet"/>
+  <circle cx="193" cy="298" r="11" class="mint"/>
+  <circle cx="238" cy="206" r="9" class="violet"/>
+  <circle cx="82" cy="294" r="7" class="mint"/>
+  <circle cx="176" cy="222" r="9" class="violet"/>
+  <rect x="42" y="247" width="136" height="28" rx="9" class="chip"/>
+  <text x="110" y="265" text-anchor="middle" class="note">5c0uT-library_manager</text>
+  <rect x="155" y="202" width="131" height="28" rx="9" class="chip"/>
+  <text x="220" y="220" text-anchor="middle" class="note">MFC_Applications</text>
+  <rect x="146" y="268" width="140" height="28" rx="9" class="chip"/>
+  <text x="216" y="286" text-anchor="middle" class="note">Used_Kompas_api</text>
+  <text x="167" y="320" text-anchor="middle" class="subnote">scattered ideas, utilities, raw problem space</text>
 
   <!-- Knowledge -->
-  <circle cx="352" cy="168" r="10" class="mint" />
-  <circle cx="392" cy="147" r="9" class="violet" />
-  <circle cx="434" cy="118" r="8" class="violet" />
-  <circle cx="449" cy="164" r="8" class="mint" />
-  <circle cx="503" cy="190" r="9" class="violet" />
-  <circle cx="537" cy="150" r="9" class="mint" />
-  <circle cx="414" cy="212" r="9" class="mint" />
-  <circle cx="471" cy="226" r="8" class="violet" />
-  <circle cx="356" cy="246" r="9" class="violet" />
-  <circle cx="448" cy="260" r="8" class="violet" />
-  <circle cx="516" cy="252" r="9" class="mint" />
-  <circle cx="389" cy="282" r="7" class="mint" />
-  <circle cx="438" cy="297" r="8" class="violet" />
-  <circle cx="522" cy="286" r="8" class="mint" />
-  <path d="M352 168 L392 147 L414 212 L471 226 L516 252" class="subline" />
-  <path d="M434 118 L434 260 L448 260" class="subline" />
-  <path d="M392 147 L392 246 L356 246" class="subline" />
-  <path d="M449 164 L449 282 L389 282" class="subline" />
-  <path d="M537 150 L503 150 L503 190" class="subline" />
-  <path d="M471 226 L471 297 L438 297" class="subline" />
-  <path d="M516 252 L522 252 L522 286" class="subline" />
+  <circle cx="376" cy="166" r="10" class="mint"/>
+  <circle cx="416" cy="145" r="9" class="violet"/>
+  <circle cx="452" cy="118" r="8" class="violet"/>
+  <circle cx="470" cy="165" r="8" class="mint"/>
+  <circle cx="518" cy="192" r="9" class="violet"/>
+  <circle cx="558" cy="151" r="9" class="mint"/>
+  <circle cx="420" cy="213" r="9" class="mint"/>
+  <circle cx="476" cy="228" r="8" class="violet"/>
+  <circle cx="360" cy="247" r="9" class="violet"/>
+  <circle cx="452" cy="260" r="8" class="violet"/>
+  <circle cx="520" cy="252" r="9" class="mint"/>
+  <circle cx="392" cy="282" r="7" class="mint"/>
+  <circle cx="442" cy="297" r="8" class="violet"/>
+  <circle cx="524" cy="286" r="8" class="mint"/>
+  <path d="M376 166 L416 145 L420 213 L476 228 L520 252" class="mesh"/>
+  <path d="M452 118 L452 260 L452 260" class="mesh"/>
+  <path d="M416 145 L416 247 L360 247" class="mesh"/>
+  <path d="M470 165 L470 282 L392 282" class="mesh"/>
+  <path d="M558 151 L518 151 L518 192" class="mesh"/>
+  <path d="M476 228 L476 297 L442 297" class="mesh"/>
+  <path d="M520 252 L524 252 L524 286" class="mesh"/>
+  <rect x="360" y="194" width="148" height="28" rx="9" class="chip"/>
+  <text x="434" y="212" text-anchor="middle" class="note">maze-anomaly-detector</text>
+  <rect x="440" y="254" width="108" height="28" rx="9" class="chip"/>
+  <text x="494" y="272" text-anchor="middle" class="note">ddashbords</text>
+  <rect x="374" y="300" width="106" height="28" rx="9" class="chip"/>
+  <text x="427" y="318" text-anchor="middle" class="note">Liza_ass</text>
+  <text x="489" y="320" text-anchor="middle" class="subnote">patterns begin to connect and specialize</text>
 
   <!-- Experience -->
-  <circle cx="648" cy="171" r="10" class="mint" />
-  <circle cx="688" cy="145" r="9" class="violet" />
-  <circle cx="722" cy="118" r="8" class="violet" />
-  <circle cx="747" cy="166" r="8" class="mint" />
-  <circle cx="796" cy="216" r="10" class="mint" />
-  <circle cx="831" cy="160" r="9" class="mint" />
-  <circle cx="688" cy="222" r="9" class="violet" />
-  <circle cx="739" cy="229" r="8" class="mint" />
-  <circle cx="793" cy="259" r="9" class="mint" />
-  <circle cx="701" cy="286" r="8" class="violet" />
-  <circle cx="765" cy="292" r="9" class="mint" />
-  <circle cx="825" cy="292" r="11" class="violet" />
-  <path d="M688 222 L739 229 L739 292" class="subline" />
-  <path d="M701 286 L701 222" class="subline" />
-  <path d="M739 229 L793 229 L793 259" class="subline" />
-  <path d="M793 259 L793 292 L765 292" class="subline" />
-  <path d="M796 216 L811 216 L811 160 L831 160" class="line" />
-  <path d="M796 216 L789 216 L789 259" class="line" />
-  <path d="M789 259 L789 292 L765 292" class="line" />
-  <line x1="845" y1="147" x2="856" y2="136" class="spark" />
-  <line x1="850" y1="161" x2="865" y2="161" class="spark" />
-  <line x1="846" y1="176" x2="858" y2="184" class="spark" />
+  <circle cx="694" cy="170" r="10" class="mint"/>
+  <circle cx="734" cy="144" r="9" class="violet"/>
+  <circle cx="768" cy="117" r="8" class="violet"/>
+  <circle cx="793" cy="165" r="8" class="mint"/>
+  <circle cx="844" cy="214" r="10" class="mint"/>
+  <circle cx="882" cy="156" r="9" class="mint"/>
+  <circle cx="734" cy="222" r="9" class="violet"/>
+  <circle cx="785" cy="228" r="8" class="mint"/>
+  <circle cx="842" cy="260" r="9" class="mint"/>
+  <circle cx="748" cy="286" r="8" class="violet"/>
+  <circle cx="812" cy="293" r="10" class="mint"/>
+  <circle cx="874" cy="294" r="11" class="violet"/>
+  <path d="M734 222 L785 228 L785 293" class="mesh"/>
+  <path d="M748 286 L748 222" class="mesh"/>
+  <path d="M785 228 L842 228 L842 260" class="mesh"/>
+  <path d="M842 260 L842 293 L812 293" class="mesh"/>
+  <path d="M844 214 L862 214 L862 156 L882 156" class="pathline"/>
+  <path d="M844 214 L838 214 L838 260" class="pathline"/>
+  <path d="M838 260 L838 293 L812 293" class="pathline"/>
+  <line x1="894" y1="144" x2="906" y2="133" class="spark"/>
+  <line x1="899" y1="158" x2="913" y2="158" class="spark"/>
+  <line x1="895" y1="173" x2="907" y2="181" class="spark"/>
+  <rect x="700" y="195" width="116" height="28" rx="9" class="chip"/>
+  <text x="758" y="213" text-anchor="middle" class="note">Interton</text>
+  <rect x="746" y="280" width="144" height="28" rx="9" class="chip"/>
+  <text x="818" y="298" text-anchor="middle" class="note">SpartialDB_core</text>
+  <text x="811" y="320" text-anchor="middle" class="subnote">major systems emerge and start defining the path</text>
 
-  <!-- Strategy background blur -->
-  <circle cx="212" cy="448" r="12" class="faint-mint" filter="url(#blur)" />
-  <circle cx="256" cy="438" r="14" class="faint-violet" filter="url(#blur)" />
-  <circle cx="300" cy="470" r="12" class="faint-mint" filter="url(#blur)" />
-  <circle cx="340" cy="448" r="13" class="faint-violet" filter="url(#blur)" />
-  <circle cx="380" cy="488" r="12" class="faint-mint" filter="url(#blur)" />
-  <circle cx="236" cy="530" r="12" class="faint-violet" filter="url(#blur)" />
-  <circle cx="290" cy="548" r="14" class="faint-mint" filter="url(#blur)" />
-  <circle cx="348" cy="534" r="13" class="faint-violet" filter="url(#blur)" />
+  <!-- Strategy blurred memory -->
+  <circle cx="228" cy="470" r="12" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="268" cy="452" r="14" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="312" cy="482" r="12" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="356" cy="460" r="13" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="392" cy="504" r="12" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="250" cy="560" r="12" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="322" cy="576" r="13" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="384" cy="558" r="13" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="220" cy="596" r="9" class="violet"/>
+  <circle cx="244" cy="548" r="10" class="mint"/>
+  <circle cx="310" cy="540" r="10" class="mint"/>
+  <circle cx="366" cy="484" r="10" class="mint"/>
+  <circle cx="397" cy="445" r="11" class="mint"/>
+  <path d="M220 596 L244 548 L310 540 L366 484 L397 445" class="pathline"/>
+  <rect x="204" y="607" width="120" height="28" rx="9" class="chip"/>
+  <text x="264" y="625" text-anchor="middle" class="note">typed systems</text>
+  <rect x="310" y="425" width="132" height="28" rx="9" class="chip"/>
+  <text x="376" y="443" text-anchor="middle" class="note">ai workflows</text>
+  <line x1="411" y1="433" x2="423" y2="422" class="spark"/>
+  <line x1="415" y1="446" x2="429" y2="446" class="spark"/>
+  <line x1="411" y1="460" x2="423" y2="469" class="spark"/>
+  <text x="327" y="646" text-anchor="middle" class="subnote">noise is reduced; only the route that matters stays visible</text>
 
-  <!-- Strategy path -->
-  <circle cx="206" cy="566" r="9" class="violet" />
-  <circle cx="225" cy="520" r="10" class="mint" />
-  <circle cx="286" cy="515" r="10" class="mint" />
-  <circle cx="338" cy="462" r="9" class="mint" />
-  <circle cx="362" cy="425" r="10" class="mint" />
-  <path d="M206 566 L225 520 L286 515 L338 462 L362 425" class="line" />
-  <line x1="374" y1="414" x2="386" y2="403" class="spark" />
-  <line x1="378" y1="428" x2="392" y2="428" class="spark" />
-  <line x1="374" y1="442" x2="386" y2="451" class="spark" />
+  <!-- Intuition -->
+  <circle cx="548" cy="446" r="12" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="590" cy="434" r="14" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="636" cy="460" r="12" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="688" cy="446" r="13" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="552" cy="542" r="12" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="626" cy="568" r="14" class="faint-violet" filter="url(#softBlur)"/>
+  <circle cx="702" cy="546" r="13" class="faint-mint" filter="url(#softBlur)"/>
+  <circle cx="544" cy="596" r="9" class="violet"/>
+  <circle cx="722" cy="438" r="11" class="mint"/>
+  <path d="M544 596 Q594 546 638 505 Q678 468 722 438" class="pathline"/>
+  <rect x="584" y="592" width="160" height="28" rx="9" class="chip"/>
+  <text x="664" y="610" text-anchor="middle" class="note">5c0uT / Integrate</text>
+  <line x1="736" y1="426" x2="748" y2="414" class="spark"/>
+  <line x1="740" y1="439" x2="754" y2="439" class="spark"/>
+  <line x1="736" y1="453" x2="748" y2="462" class="spark"/>
+  <text x="653" y="646" text-anchor="middle" class="subnote">the repository graph compresses into one direct, reusable instinct</text>
 
-  <!-- Intuition background blur -->
-  <circle cx="510" cy="444" r="12" class="faint-violet" filter="url(#blur)" />
-  <circle cx="553" cy="432" r="14" class="faint-mint" filter="url(#blur)" />
-  <circle cx="598" cy="458" r="13" class="faint-violet" filter="url(#blur)" />
-  <circle cx="645" cy="446" r="12" class="faint-mint" filter="url(#blur)" />
-  <circle cx="524" cy="534" r="13" class="faint-mint" filter="url(#blur)" />
-  <circle cx="585" cy="548" r="14" class="faint-violet" filter="url(#blur)" />
-  <circle cx="654" cy="526" r="13" class="faint-mint" filter="url(#blur)" />
-
-  <!-- Intuition path -->
-  <circle cx="512" cy="564" r="9" class="violet" />
-  <circle cx="677" cy="420" r="11" class="mint" />
-  <path d="M512 564 Q560 522 602 486 Q638 454 677 420" class="line" />
-  <line x1="690" y1="408" x2="703" y2="397" class="spark" />
-  <line x1="694" y1="421" x2="708" y2="421" class="spark" />
-  <line x1="691" y1="435" x2="704" y2="443" class="spark" />
+  <!-- panel-to-panel cues -->
+  <path d="M282 232 C315 232 327 216 346 216" class="mesh"/>
+  <path d="M626 248 C653 248 664 214 700 214" class="mesh"/>
 </svg>

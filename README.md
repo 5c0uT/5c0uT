@@ -53,9 +53,13 @@ shipping applied AI automation across public and private engineering work
 </p>
 
 <p align="center"><code>systems / compute</code></p>
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=linux,docker,nginx,cmake,cuda&theme=dark" alt="systems and compute" />
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-1f242d?style=flat-square&logo=linux&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Linux" />
+  <img src="https://img.shields.io/badge/Docker-1f242d?style=flat-square&logo=docker&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Docker" />
+  <img src="https://img.shields.io/badge/Nginx-1f242d?style=flat-square&logo=nginx&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Nginx" />
+  <img src="https://img.shields.io/badge/CMake-1f242d?style=flat-square&logo=cmake&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="CMake" />
+  <img src="https://img.shields.io/badge/CUDA-1f242d?style=flat-square&labelColor=0d1117&color=1f242d" alt="CUDA" />
+</p>
 <p align="center">
   <img src="https://img.shields.io/badge/EndeavourOS-1f242d?style=flat-square&logo=endeavouros&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="EndeavourOS" />
   <img src="https://img.shields.io/badge/Vulkan-1f242d?style=flat-square&logo=vulkan&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Vulkan" />
@@ -106,7 +110,7 @@ shipping applied AI automation across public and private engineering work
 </p>
 
 <p align="center">
-  <img src="./assets/logic-map.svg" alt="Logic map from information to intuition" width="100%" />
+  <img src="./assets/logic-map.svg" alt="Logic map of repository progression and linkage" width="100%" />
 </p>
 
 ---
