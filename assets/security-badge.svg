@@ -1,0 +1,7 @@
+<svg width="112" height="20" viewBox="0 0 112 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="112" height="20" rx="6" fill="#1f242d"/>
+  <rect x="0.5" y="0.5" width="111" height="19" rx="5.5" stroke="#0d1117"/>
+  <path d="M14 4L19 6V10.2C19 13.1 16.95 15.35 14 16C11.05 15.35 9 13.1 9 10.2V6L14 4Z" fill="#39d353"/>
+  <path d="M13.1 11.9L11.3 10.1L10.2 11.2L13.1 14.1L17.9 9.3L16.8 8.2L13.1 11.9Z" fill="#0d1117"/>
+  <text x="30" y="13.2" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="600">Security</text>
+</svg>

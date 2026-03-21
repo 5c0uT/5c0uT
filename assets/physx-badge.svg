@@ -1,0 +1,6 @@
+<svg width="92" height="20" viewBox="0 0 92 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="92" height="20" rx="6" fill="#1f242d"/>
+  <rect x="0.5" y="0.5" width="91" height="19" rx="5.5" stroke="#0d1117"/>
+  <path d="M10 5H14.5C16.9853 5 19 7.01472 19 9.5C19 11.9853 16.9853 14 14.5 14H13V11.5H14.4C15.5601 11.5 16.5 10.5601 16.5 9.4C16.5 8.2399 15.5601 7.3 14.4 7.3H12.5V16H10V5Z" fill="#39d353"/>
+  <text x="30" y="13.2" fill="#c9d1d9" font-family="Segoe UI, Arial, sans-serif" font-size="11.5" font-weight="600">PhysX</text>
+</svg>

@@ -49,7 +49,7 @@
 </div>
 <p align="center">
   <img src="https://img.shields.io/badge/Playwright-1f242d?style=flat-square&logo=playwright&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Playwright" />
-  <img src="https://img.shields.io/badge/Interton-1f242d?style=flat-square&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Interton" />
+  <img src="./assets/interton.svg" alt="Interton" height="20" />
 </p>
 
 <p align="center"><code>systems / compute</code></p>
@@ -64,8 +64,8 @@
   <img src="https://img.shields.io/badge/EndeavourOS-1f242d?style=flat-square&logo=endeavouros&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="EndeavourOS" />
   <img src="https://img.shields.io/badge/Vulkan-1f242d?style=flat-square&logo=vulkan&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Vulkan" />
   <img src="https://img.shields.io/badge/OpenGL-1f242d?style=flat-square&logo=opengl&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="OpenGL" />
-  <img src="https://img.shields.io/badge/PhysX-1f242d?style=flat-square&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="PhysX" />
-  <img src="https://img.shields.io/badge/Security-1f242d?style=flat-square&labelColor=0d1117&color=1f242d" alt="Security" />
+  <img src="./assets/physx-badge.svg" alt="PhysX" height="20" />
+  <img src="./assets/security-badge.svg" alt="Security" height="20" />
 </p>
 
 <p align="center"><code>data / storage</code></p>
@@ -77,9 +77,6 @@
 <div align="center">
   <img src="https://skillicons.dev/icons?i=git,githubactions,vscode,visualstudio&theme=dark" alt="tooling and workflow" />
 </div>
-<p align="center">
-  <img src="https://img.shields.io/badge/Visual_Studio_2022-1f242d?style=flat-square&logo=visualstudio&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Visual Studio 2022" />
-</p>
 
 ---
 
