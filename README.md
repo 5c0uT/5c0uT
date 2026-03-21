@@ -41,9 +41,9 @@
 <p align="center"><code>languages</code></p>
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py,cpp,c,cs,js,ts,bash,powershell&theme=dark" alt="languages" />
-</div>
-<div align="center">
-  <img src="./assets/interton-tile.svg" alt="Interton language" height="48" />
+  <a href="https://github.com/5c0uT/Interton" target="_blank">
+    <img src="./assets/interton.svg" alt="Interton language" height="18" style="vertical-align: middle; margin-left: 8px;" />
+  </a>
 </div>
 
 <p align="center"><code>runtime / frameworks</code></p>
