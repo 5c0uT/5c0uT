@@ -1,0 +1,7 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="48" height="48" rx="11" fill="#161B22" stroke="#2A2F38" stroke-width="2"/>
+  <path d="M14 32L24.5 16L36 32H14Z" stroke="#39D353" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M21 25L24.5 20L28 25H21Z" fill="#9BE9A8"/>
+  <path d="M19 30H30" stroke="#9BE9A8" stroke-width="2" stroke-linecap="round"/>
+  <text x="25" y="43" text-anchor="middle" fill="#39D353" font-family="Segoe UI, Arial, sans-serif" font-size="7.2" font-weight="700">VULKAN</text>
+</svg>

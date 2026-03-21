@@ -42,30 +42,26 @@
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py,cpp,c,cs,js,ts,bash,powershell&theme=dark" alt="languages" />
 </div>
+<div align="center">
+  <img src="./assets/interton.svg" alt="Interton language" height="16" />
+</div>
 
 <p align="center"><code>runtime / frameworks</code></p>
 <div align="center">
   <img src="https://skillicons.dev/icons?i=dotnet,nodejs,django,react&theme=dark" alt="runtime and frameworks" />
 </div>
-<div align="center">
-  <img src="https://img.shields.io/badge/Playwright-1f242d?style=flat-square&logo=playwright&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Playwright" />
-  <img src="./assets/interton.svg" alt="Interton" height="16" />
-</div>
 
 <p align="center"><code>systems / compute</code></p>
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-1f242d?style=flat-square&logo=linux&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Linux" />
-  <img src="https://img.shields.io/badge/Docker-1f242d?style=flat-square&logo=docker&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Docker" />
-  <img src="https://img.shields.io/badge/Nginx-1f242d?style=flat-square&logo=nginx&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Nginx" />
-  <img src="https://img.shields.io/badge/CMake-1f242d?style=flat-square&logo=cmake&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="CMake" />
-  <img src="https://img.shields.io/badge/CUDA-1f242d?style=flat-square&labelColor=0d1117&color=1f242d" alt="CUDA" />
-</p>
 <div align="center">
-  <img src="https://img.shields.io/badge/EndeavourOS-1f242d?style=flat-square&logo=endeavouros&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="EndeavourOS" />
-  <img src="https://img.shields.io/badge/Vulkan-1f242d?style=flat-square&logo=vulkan&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="Vulkan" />
-  <img src="https://img.shields.io/badge/OpenGL-1f242d?style=flat-square&logo=opengl&logoColor=39d353&labelColor=0d1117&color=1f242d" alt="OpenGL" />
-  <img src="./assets/physx-badge.svg" alt="PhysX" height="18" />
-  <img src="./assets/security-badge.svg" alt="Security" height="18" />
+  <img src="https://skillicons.dev/icons?i=linux,docker,nginx,cmake&theme=dark" alt="systems and compute base" />
+</div>
+<div align="center">
+  <img src="./assets/cuda-tile.svg" alt="CUDA" height="48" />
+  <img src="./assets/endeavouros-tile.svg" alt="EndeavourOS" height="48" />
+  <img src="./assets/vulkan-tile.svg" alt="Vulkan" height="48" />
+  <img src="./assets/opengl-tile.svg" alt="OpenGL" height="48" />
+  <img src="./assets/physx-tile.svg" alt="PhysX" height="48" />
+  <img src="./assets/security-tile.svg" alt="Security" height="48" />
 </div>
 
 <p align="center"><code>data / storage</code></p>
@@ -88,7 +84,7 @@
 
 | `Interton` |
 | --- |
-| Engineering language project built around a typed core, standard modules, and domain-specific stacks. |
+| Programming language project built around a typed core, standard modules, and domain-specific stacks. |
 | Designed as a structured entry point for technical development where modularity, language design, and practical integration stay first-class. |
 | <img src="https://img.shields.io/badge/typed_core-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="typed core" /> <img src="https://img.shields.io/badge/modules-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="modules" /> <img src="https://img.shields.io/badge/domain_stacks-0d1117?style=flat-square&logoColor=39d353&color=1f242d" alt="domain stacks" /> |
 | [![repo](https://img.shields.io/badge/open_repo-39d353?style=flat-square&logo=github&logoColor=0d1117&labelColor=0d1117)](https://github.com/5c0uT/Interton) |

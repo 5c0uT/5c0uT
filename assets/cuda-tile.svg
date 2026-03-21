@@ -1,0 +1,7 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="48" height="48" rx="11" fill="#161B22" stroke="#2A2F38" stroke-width="2"/>
+  <path d="M15 19.5C17 16.8 20.1 15 23.8 15C27.8 15 31.1 16.9 33 20" stroke="#39D353" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M34.5 24.5C34.5 30 30.3 34.2 24.8 34.2C20.4 34.2 16.8 31.5 15.5 27.5" stroke="#39D353" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M18.5 21.5L24.5 18.2L30.5 21.5V28.2L24.5 31.5L18.5 28.2V21.5Z" stroke="#9BE9A8" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="25" y="43" text-anchor="middle" fill="#39D353" font-family="Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700">CUDA</text>
+</svg>
