@@ -1,0 +1,135 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+    <style>
+      .panel { fill: #0d1117; stroke: #30363d; stroke-width: 2; }
+      .title { fill: #c9d1d9; font: 700 18px 'Segoe UI', Arial, sans-serif; }
+      .line { stroke: #7ee787; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .subline { stroke: #8b949e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .mint { fill: #74f0c0; stroke: #0d1117; stroke-width: 2; }
+      .violet { fill: #c7a8ff; stroke: #0d1117; stroke-width: 2; }
+      .faint-mint { fill: #74f0c0; opacity: 0.38; }
+      .faint-violet { fill: #c7a8ff; opacity: 0.34; }
+      .spark { stroke: #c9d1d9; stroke-width: 2; stroke-linecap: round; }
+      .caption { fill: #8b949e; font: 500 12px 'Segoe UI', Arial, sans-serif; letter-spacing: 0.08em; }
+    </style>
+  </defs>
+
+  <rect width="900" height="700" fill="transparent" />
+
+  <text x="450" y="34" text-anchor="middle" class="caption">RAW SIGNAL -> STRUCTURE -> EXPERIENCE -> STRATEGY -> INTUITION</text>
+
+  <rect x="24" y="56" width="260" height="270" rx="18" class="panel" />
+  <rect x="320" y="56" width="260" height="270" rx="18" class="panel" />
+  <rect x="616" y="56" width="260" height="270" rx="18" class="panel" />
+  <rect x="170" y="362" width="260" height="270" rx="18" class="panel" />
+  <rect x="470" y="362" width="260" height="270" rx="18" class="panel" />
+
+  <text x="154" y="92" text-anchor="middle" class="title">Information</text>
+  <text x="450" y="92" text-anchor="middle" class="title">Knowledge</text>
+  <text x="746" y="92" text-anchor="middle" class="title">Experience</text>
+  <text x="300" y="398" text-anchor="middle" class="title">Strategy</text>
+  <text x="600" y="398" text-anchor="middle" class="title">Intuition</text>
+
+  <!-- Information -->
+  <circle cx="64" cy="170" r="10" class="mint" />
+  <circle cx="92" cy="233" r="9" class="violet" />
+  <circle cx="116" cy="132" r="10" class="violet" />
+  <circle cx="145" cy="266" r="8" class="mint" />
+  <circle cx="172" cy="112" r="8" class="violet" />
+  <circle cx="202" cy="172" r="10" class="mint" />
+  <circle cx="228" cy="246" r="8" class="mint" />
+  <circle cx="247" cy="145" r="9" class="mint" />
+  <circle cx="122" cy="307" r="7" class="violet" />
+  <circle cx="187" cy="301" r="11" class="mint" />
+  <circle cx="235" cy="205" r="9" class="violet" />
+  <circle cx="82" cy="294" r="7" class="mint" />
+  <circle cx="173" cy="221" r="9" class="violet" />
+
+  <!-- Knowledge -->
+  <circle cx="352" cy="168" r="10" class="mint" />
+  <circle cx="392" cy="147" r="9" class="violet" />
+  <circle cx="434" cy="118" r="8" class="violet" />
+  <circle cx="449" cy="164" r="8" class="mint" />
+  <circle cx="503" cy="190" r="9" class="violet" />
+  <circle cx="537" cy="150" r="9" class="mint" />
+  <circle cx="414" cy="212" r="9" class="mint" />
+  <circle cx="471" cy="226" r="8" class="violet" />
+  <circle cx="356" cy="246" r="9" class="violet" />
+  <circle cx="448" cy="260" r="8" class="violet" />
+  <circle cx="516" cy="252" r="9" class="mint" />
+  <circle cx="389" cy="282" r="7" class="mint" />
+  <circle cx="438" cy="297" r="8" class="violet" />
+  <circle cx="522" cy="286" r="8" class="mint" />
+  <path d="M352 168 L392 147 L414 212 L471 226 L516 252" class="subline" />
+  <path d="M434 118 L434 260 L448 260" class="subline" />
+  <path d="M392 147 L392 246 L356 246" class="subline" />
+  <path d="M449 164 L449 282 L389 282" class="subline" />
+  <path d="M537 150 L503 150 L503 190" class="subline" />
+  <path d="M471 226 L471 297 L438 297" class="subline" />
+  <path d="M516 252 L522 252 L522 286" class="subline" />
+
+  <!-- Experience -->
+  <circle cx="648" cy="171" r="10" class="mint" />
+  <circle cx="688" cy="145" r="9" class="violet" />
+  <circle cx="722" cy="118" r="8" class="violet" />
+  <circle cx="747" cy="166" r="8" class="mint" />
+  <circle cx="796" cy="216" r="10" class="mint" />
+  <circle cx="831" cy="160" r="9" class="mint" />
+  <circle cx="688" cy="222" r="9" class="violet" />
+  <circle cx="739" cy="229" r="8" class="mint" />
+  <circle cx="793" cy="259" r="9" class="mint" />
+  <circle cx="701" cy="286" r="8" class="violet" />
+  <circle cx="765" cy="292" r="9" class="mint" />
+  <circle cx="825" cy="292" r="11" class="violet" />
+  <path d="M688 222 L739 229 L739 292" class="subline" />
+  <path d="M701 286 L701 222" class="subline" />
+  <path d="M739 229 L793 229 L793 259" class="subline" />
+  <path d="M793 259 L793 292 L765 292" class="subline" />
+  <path d="M796 216 L811 216 L811 160 L831 160" class="line" />
+  <path d="M796 216 L789 216 L789 259" class="line" />
+  <path d="M789 259 L789 292 L765 292" class="line" />
+  <line x1="845" y1="147" x2="856" y2="136" class="spark" />
+  <line x1="850" y1="161" x2="865" y2="161" class="spark" />
+  <line x1="846" y1="176" x2="858" y2="184" class="spark" />
+
+  <!-- Strategy background blur -->
+  <circle cx="212" cy="448" r="12" class="faint-mint" filter="url(#blur)" />
+  <circle cx="256" cy="438" r="14" class="faint-violet" filter="url(#blur)" />
+  <circle cx="300" cy="470" r="12" class="faint-mint" filter="url(#blur)" />
+  <circle cx="340" cy="448" r="13" class="faint-violet" filter="url(#blur)" />
+  <circle cx="380" cy="488" r="12" class="faint-mint" filter="url(#blur)" />
+  <circle cx="236" cy="530" r="12" class="faint-violet" filter="url(#blur)" />
+  <circle cx="290" cy="548" r="14" class="faint-mint" filter="url(#blur)" />
+  <circle cx="348" cy="534" r="13" class="faint-violet" filter="url(#blur)" />
+
+  <!-- Strategy path -->
+  <circle cx="206" cy="566" r="9" class="violet" />
+  <circle cx="225" cy="520" r="10" class="mint" />
+  <circle cx="286" cy="515" r="10" class="mint" />
+  <circle cx="338" cy="462" r="9" class="mint" />
+  <circle cx="362" cy="425" r="10" class="mint" />
+  <path d="M206 566 L225 520 L286 515 L338 462 L362 425" class="line" />
+  <line x1="374" y1="414" x2="386" y2="403" class="spark" />
+  <line x1="378" y1="428" x2="392" y2="428" class="spark" />
+  <line x1="374" y1="442" x2="386" y2="451" class="spark" />
+
+  <!-- Intuition background blur -->
+  <circle cx="510" cy="444" r="12" class="faint-violet" filter="url(#blur)" />
+  <circle cx="553" cy="432" r="14" class="faint-mint" filter="url(#blur)" />
+  <circle cx="598" cy="458" r="13" class="faint-violet" filter="url(#blur)" />
+  <circle cx="645" cy="446" r="12" class="faint-mint" filter="url(#blur)" />
+  <circle cx="524" cy="534" r="13" class="faint-mint" filter="url(#blur)" />
+  <circle cx="585" cy="548" r="14" class="faint-violet" filter="url(#blur)" />
+  <circle cx="654" cy="526" r="13" class="faint-mint" filter="url(#blur)" />
+
+  <!-- Intuition path -->
+  <circle cx="512" cy="564" r="9" class="violet" />
+  <circle cx="677" cy="420" r="11" class="mint" />
+  <path d="M512 564 Q560 522 602 486 Q638 454 677 420" class="line" />
+  <line x1="690" y1="408" x2="703" y2="397" class="spark" />
+  <line x1="694" y1="421" x2="708" y2="421" class="spark" />
+  <line x1="691" y1="435" x2="704" y2="443" class="spark" />
+</svg>
