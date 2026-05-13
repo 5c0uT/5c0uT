@@ -14,59 +14,45 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     steps:
       - name: Checkout profile repository
-        uses: actions/checkout@v4
-
-      - name: Checkout stats generator
-        uses: actions/checkout@v4
-        with:
-          repository: jstrieb/github-stats
-          path: .tmp/github-stats
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-          cache: "pip"
-          cache-dependency-path: .tmp/github-stats/requirements.txt
+        uses: actions/checkout@v6
 
       - name: Validate required secret
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if [ -z "$ACCESS_TOKEN" ]; then
-            echo "Missing ACCESS_TOKEN secret. Create a personal access token with read:user and repo scopes."
+            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with read:user, user:email, and repo scopes."
             exit 1
           fi
 
-      - name: Install requirements
-        working-directory: .tmp/github-stats
+      - name: Download github-stats CLI
         run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
+          curl -L -o /tmp/github-stats \
+            https://github.com/jstrieb/github-stats/releases/latest/download/github-stats_x86_64-linux
+          chmod +x /tmp/github-stats
+          /tmp/github-stats --version
 
       - name: Generate SVG stats
-        working-directory: .tmp/github-stats
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXCLUDED: ${{ secrets.EXCLUDED }}
-          EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
-          EXCLUDE_FORKED_REPOS: true
-        run: python generate_images.py
-
-      - name: Copy generated assets
+          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS || secrets.EXCLUDED }}
+          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS || secrets.EXCLUDED_LANGS }}
+          EXCLUDE_PRIVATE: "false"
+          SILENT: "true"
+          MAX_RETRIES: "5"
         run: |
           mkdir -p generated
-          cp .tmp/github-stats/generated/*.svg generated/
+          cd generated
+          /tmp/github-stats
 
       - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/*.svg
+          git add generated
           git commit -m "Update private stats" || exit 0
           git push
