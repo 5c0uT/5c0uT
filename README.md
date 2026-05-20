@@ -157,4 +157,3 @@
     <img alt="github-snake" src="https://raw.githubusercontent.com/5c0uT/5c0uT/refs/heads/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
-\
