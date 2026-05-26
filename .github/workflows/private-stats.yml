@@ -35,7 +35,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if [ -z "${ACCESS_TOKEN}" ]; then
-            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with read:user, user:email, and repo scopes."
+            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with repo and read:user scopes. Add user:email for the most accurate changed-lines attribution."
             exit 1
           fi
 
@@ -64,10 +64,11 @@ jobs:
             echo "ACCESS_TOKEN must include read:user scope so user/repository metadata is available."
             exit 1
           }
-          has_scope user:email || has_scope user || {
-            echo "ACCESS_TOKEN must include user:email scope so changed lines can be attributed to all verified emails."
-            exit 1
-          }
+          if has_scope user:email || has_scope user; then
+            echo "ACCESS_TOKEN includes user:email; changed-lines attribution can use verified email addresses."
+          else
+            echo "::warning title=ACCESS_TOKEN missing user:email::Generation will continue, but changed-lines attribution can miss commits made with private, old, or otherwise verified emails. Add user:email to ACCESS_TOKEN for the most complete line statistics."
+          fi
 
       - name: Allow stats CLI to clone private repositories
         env:
