@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "15 0 * * *"
   workflow_dispatch:
+  repository_dispatch:
+    types: [refresh-private-stats]
   push:
     branches:
       - main
@@ -22,7 +24,7 @@ defaults:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
 
     steps:
       - name: Checkout profile repository
@@ -35,7 +37,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if [ -z "${ACCESS_TOKEN}" ]; then
-            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with repo and read:user scopes. Add user:email for the most accurate changed-lines attribution."
+            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with repo and read:user scopes. Add user:email or AUTHOR_EMAILS for the most accurate attribution."
             exit 1
           fi
 
@@ -57,7 +59,7 @@ jobs:
           }
 
           has_scope repo || {
-            echo "ACCESS_TOKEN must be a classic token with repo scope so private repositories are visible."
+            echo "ACCESS_TOKEN must be a classic token with repo scope so private repositories are visible and cloneable."
             exit 1
           }
           has_scope read:user || has_scope user || {
@@ -65,12 +67,12 @@ jobs:
             exit 1
           }
           if has_scope user:email || has_scope user; then
-            echo "ACCESS_TOKEN includes user:email; changed-lines attribution can use verified email addresses."
+            echo "ACCESS_TOKEN includes user:email; commits can be matched against verified account emails."
           else
-            echo "::warning title=ACCESS_TOKEN missing user:email::Generation will continue, but changed-lines attribution can miss commits made with private, old, or otherwise verified emails. Add user:email to ACCESS_TOKEN for the most complete line statistics."
+            echo "::warning title=ACCESS_TOKEN missing user:email::Generation will continue. For exact attribution, either add user:email to ACCESS_TOKEN or create an AUTHOR_EMAILS secret with every git author email you use."
           fi
 
-      - name: Allow stats CLI to clone private repositories
+      - name: Allow git to clone private repositories
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
@@ -84,7 +86,7 @@ jobs:
           chmod +x /tmp/github-stats
           /tmp/github-stats --version
 
-      - name: Generate SVG stats
+      - name: Generate base SVG stats
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
@@ -98,11 +100,21 @@ jobs:
           cd generated
           /tmp/github-stats
 
+      - name: Generate exact all-change counters
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          AUTHOR_EMAILS: ${{ secrets.AUTHOR_EMAILS }}
+          EXTRA_REPOS: ${{ secrets.EXTRA_REPOS }}
+          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
+          OUTPUT_DIR: generated
+        run: |
+          python3 scripts/generate_all_changes_stats.py
+
       - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/overview.svg generated/languages.svg
+          git add generated/overview.svg generated/languages.svg generated/all-changes.svg generated/all-changes.json
           git diff --cached --quiet && exit 0
           git commit -m "Update private stats"
           git push

@@ -128,6 +128,14 @@
 
 <p align="center">
   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/all-changes.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/all-changes.svg" />
+    <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/all-changes.svg" alt="all git changes" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" />
     <img src="https://raw.githubusercontent.com/5c0uT/5c0uT/main/generated/languages.svg" alt="github languages" />
