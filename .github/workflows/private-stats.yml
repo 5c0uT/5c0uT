@@ -4,8 +4,6 @@ on:
   schedule:
     - cron: "15 0 * * *"
   workflow_dispatch:
-  repository_dispatch:
-    types: [refresh-private-stats]
   push:
     branches:
       - main
@@ -24,7 +22,7 @@ defaults:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 45
 
     steps:
       - name: Checkout profile repository
@@ -37,7 +35,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           if [ -z "${ACCESS_TOKEN}" ]; then
-            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with repo and read:user scopes. Add user:email or AUTHOR_EMAILS for the most accurate attribution."
+            echo "Missing ACCESS_TOKEN secret. Create a classic personal access token with repo, read:user, and user:email scopes."
             exit 1
           fi
 
@@ -63,16 +61,15 @@ jobs:
             exit 1
           }
           has_scope read:user || has_scope user || {
-            echo "ACCESS_TOKEN must include read:user scope so user/repository metadata is available."
+            echo "ACCESS_TOKEN must include read:user scope so user and repository metadata is available."
             exit 1
           }
-          if has_scope user:email || has_scope user; then
-            echo "ACCESS_TOKEN includes user:email; commits can be matched against verified account emails."
-          else
-            echo "::warning title=ACCESS_TOKEN missing user:email::Generation will continue. For exact attribution, either add user:email to ACCESS_TOKEN or create an AUTHOR_EMAILS secret with every git author email you use."
-          fi
+          has_scope user:email || has_scope user || {
+            echo "ACCESS_TOKEN must include user:email scope. Without it github-stats can miss old/private commit emails and undercount changed lines."
+            exit 1
+          }
 
-      - name: Allow git to clone private repositories
+      - name: Allow github-stats to clone private repositories
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
@@ -86,13 +83,12 @@ jobs:
           chmod +x /tmp/github-stats
           /tmp/github-stats --version
 
-      - name: Generate base SVG stats
+      - name: Generate SVG stats
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
-          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS }}
+          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS || secrets.EXCLUDED }}
+          EXCLUDE_LANGS: ${{ secrets.EXCLUDE_LANGS || secrets.EXCLUDED_LANGS }}
           EXCLUDE_PRIVATE: "false"
-          EXCLUDE_PUBLIC: "false"
           SILENT: "true"
           MAX_RETRIES: "5"
         run: |
@@ -100,21 +96,21 @@ jobs:
           cd generated
           /tmp/github-stats
 
-      - name: Generate exact all-change counters
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          AUTHOR_EMAILS: ${{ secrets.AUTHOR_EMAILS }}
-          EXTRA_REPOS: ${{ secrets.EXTRA_REPOS }}
-          EXCLUDE_REPOS: ${{ secrets.EXCLUDE_REPOS }}
-          OUTPUT_DIR: generated
+      - name: Stamp generated SVGs
         run: |
-          python3 scripts/generate_all_changes_stats.py
+          stamp="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for file in generated/overview.svg generated/languages.svg; do
+            tmp="${file}.tmp"
+            sed '/<!-- generated-at:/d' "${file}" > "${tmp}"
+            printf '\n<!-- generated-at: %s -->\n' "${stamp}" >> "${tmp}"
+            mv "${tmp}" "${file}"
+          done
 
       - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/overview.svg generated/languages.svg generated/all-changes.svg generated/all-changes.json
+          git add generated/overview.svg generated/languages.svg
           git diff --cached --quiet && exit 0
           git commit -m "Update private stats"
           git push
